@@ -14,18 +14,17 @@
     </style>
 </head>
 <body>
-    <p class="cube">aaa</p>
-    <label id="width" for="width">Enter the width : </label> 
-    <input type="number"> <br>
-    <label id="height" for="height"> Enter the height : </label>
-    <input type="number"><br> 
-    <label id="color" for="color">Choose a color :</label>
-    <input type="color"> <br>
-    <label id="radius" for="radius"> Enter the radius :</label>
-    <input type="number">
+    <p  id= "cube1" class="cube">aaa</p>
+    <label for="width">Enter the width : </label> 
+    <input id="width" type="number" onchange ="widthC(this.value)"> <br>
+    <label for="height"> Enter the height : </label>
+    <input id="height" type="number" onchange="heightC(this.value)" ><br> 
+    <label for="color">Choose a color :</label>
+    <input id="color" type="color" onchange="colorC(this.value)"> <br>
+    <label for="radius"> Enter the radius :</label>
+    <input id="radius" type="number" onchange=" borderR(this.value)">
     <br>
     <br> 
-    <button id="set"> set </button>
     <button id="reset"> reset </button>
 </body>
 <script src="main.js"></script>
